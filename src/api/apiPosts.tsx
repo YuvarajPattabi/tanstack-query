@@ -13,6 +13,7 @@ export const addPost = async (post:any) => {
   return await axios.post(URL,post).then((res) => res.data);
 };
 
+
 export const updatePost = async (userid: any, post:any) => {
     return await axios.patch(`${URL}/${userid}`,post).then((res) => res.data);
 };
